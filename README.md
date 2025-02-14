@@ -1,4 +1,4 @@
 # Federação Paulista de Futebol
 
-> !NOTE
+> [!NOTE]
 > This project is under development!
