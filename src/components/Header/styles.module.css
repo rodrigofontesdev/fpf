@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  background-color: var(--black);
+  padding: var(--space-5);
+}
+
+.logo {
+  display: flex;
+  gap: var(--space-5);
+
+  h1 {
+    color: var(--white);
+  }
+}
+
+.toggleMenu {
+  background-color: transparent;
+}
+
+.profile {
+  border-radius: var(--rounded-full);
+
+  img {
+    border-radius: inherit;
+  }
+}
