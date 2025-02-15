@@ -1,0 +1,49 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+
+  --font-primary: 'Lato', 'Lato Fallback';
+
+  --font-regular: 400;
+  --font-bold: 700;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 1.75rem;
+  --font-4xl: 2rem;
+  --font-5xl: 2.25rem;
+  --font-6xl: 2.5rem;
+  --font-7xl: 3rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 2.5rem;
+  --space-14: 3.5rem;
+  --space-18: 4.5rem;
+  --space-22: 5.5rem;
+  --space-26: 6.5rem;
+  --space-30: 7.5rem;
+  --space-34: 8.5rem;
+  --space-38: 9.5rem;
+  --space-42: 10.5rem;
+  --space-46: 11.5rem;
+  --space-50: 12.5rem;
+
+  --rounded-xs: 4px;
+  --rounded-sm: 8px;
+  --rounded-md: 12px;
+  --rounded-lg: 16px;
+  --rounded-xl: 20px;
+  --rounded-full: 9999px;
+}
