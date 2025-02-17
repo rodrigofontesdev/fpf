@@ -8,7 +8,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>
         <button
-          className={styles.toggleMenu}
+          className={styles.toggleSidebar}
           aria-label="Abrir menu"
         >
           <img

@@ -1,14 +1,14 @@
 .sidebar {
   width: 320px;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: var(--space-24);
   bottom: 0;
+  left: 0;
   z-index: -1;
   display: flex;
   align-items: center;
   background-color: #0d0d0d;
-  padding-top: var(--space-24);
-  padding-bottom: var(--space-5);
+  padding: var(--space-5) 0;
 }
 
 .mainMenu {

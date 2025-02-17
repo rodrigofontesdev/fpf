@@ -1,4 +1,8 @@
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,15 +12,17 @@
 }
 
 .logo {
+  width: 320px;
   display: flex;
   gap: var(--space-5);
 
   h1 {
     color: var(--white);
+    font-size: var(--font-3xl);
   }
 }
 
-.toggleMenu {
+.toggleSidebar {
   background-color: transparent;
 }
 

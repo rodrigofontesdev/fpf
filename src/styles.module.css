@@ -1,0 +1,68 @@
+.main {
+  margin-top: var(--space-24);
+  margin-left: 320px;
+  padding: var(--space-10) var(--space-5);
+}
+
+.app {
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.filterOptions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-10);
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: var(--space-5);
+  padding-bottom: var(--space-10);
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+
+  label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  input {
+    padding: var(--space-3) var(--space-6);
+    border: 1px solid var(--black);
+  }
+
+  button {
+    background-color: var(--black);
+    color: var(--white);
+    padding: var(--space-3) var(--space-6);
+  }
+}
+
+.newEntry {
+  background-color: var(--black);
+  color: var(--white);
+  padding: var(--space-4) var(--space-8);
+}
+
+.filter {
+  grid-column: 1 / -1;
+}
+
+.userCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
