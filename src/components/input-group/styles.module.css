@@ -1,0 +1,39 @@
+.inputGroup {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.inputLabel {
+  font-size: var(--font-sm);
+  font-weight: var(--font-bold);
+  line-height: 1;
+}
+
+.inputControl {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: var(--font-sm);
+  padding: var(--space-3) var(--space-6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: outline-color 300ms ease-in;
+
+  &[type='file'] {
+    padding: 0;
+    border: none;
+  }
+}
+
+.selectControl {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: var(--font-sm);
+  padding: var(--space-3) var(--space-6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: outline-color 300ms ease-in;
+}
+
+.inputError {
+  color: var(--red-500);
+  font-size: var(--font-sm);
+  padding: var(--space-1) var(--space-6);
+}

@@ -32,6 +32,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-width: thin;
+}
+
 body {
   background-color: var(--white);
   color: var(--black);
@@ -48,8 +52,16 @@ img {
 }
 
 button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 a {
@@ -63,4 +75,12 @@ h4,
 h5,
 h6 {
   font-weight: var(--font-bold);
+}
+
+input,
+textarea,
+select,
+option {
+  font-family: var(--font-primary);
+  font-weight: var(--font-regular);
 }
