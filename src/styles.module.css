@@ -66,3 +66,35 @@
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-5);
 }
+
+.modalCreateUser {
+  width: 600px;
+  max-height: 600px;
+  margin-top: var(--space-10);
+  overflow-y: auto;
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.formCreateUser {
+  display: grid;
+  gap: var(--space-5);
+  padding-bottom: var(--space-5);
+
+  .avatar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+  }
+}
+
+.modalCreateUser__Footer {
+  display: flex;
+  justify-content: end;
+  gap: var(--space-5);
+  margin-top: var(--space-5);
+}
