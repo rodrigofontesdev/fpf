@@ -1,0 +1,50 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-5);
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px);
+}
+
+.container {
+  position: relative;
+  max-height: 90%;
+  border-radius: var(--rounded-sm);
+  overflow-y: hidden;
+
+  &:focus {
+    outline: 2px solid var(--black);
+  }
+}
+
+.content {
+  background-color: white;
+  padding: var(--space-10);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-10);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: var(--font-2xl);
+  }
+
+  button {
+    background-color: transparent;
+    padding: var(--space-1);
+  }
+}
