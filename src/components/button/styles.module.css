@@ -1,0 +1,12 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-4) var(--space-8);
+  background-color: var(--black);
+  color: var(--white);
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
