@@ -4,7 +4,7 @@
 
 Uma interface totalmente responsiva, simulando o painel de uma plataforma. O objetivo da aplicação é que o usuário possa acessar o sistema, visualizar as pessoas cadastradas e gerenciar o cadastro.
 
-É possível visualizar o projeto através do link: [https://fpf-rodrigofontes.vercel.app/](https://fpf-rodrigofontes.vercel.app/)
+É possível ver o projeto através do link: [https://fpf-rodrigofontes.vercel.app/](https://fpf-rodrigofontes.vercel.app/)
 
 A estrutura do projeto está organizada da seguinte forma:
 
