@@ -18,7 +18,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--black);
+    background-color: var(--blue-100);
+    color: var(--blue-800);
+    border: 1px solid var(--blue-200);
+    border-radius: var(--rounded-sm);
     padding: var(--space-2) var(--space-4);
+  }
+
+  a {
+    transition: background-color 400ms ease-in;
+
+    &[data-current='true'] {
+      background-color: var(--blue-500);
+      color: var(--blue-50);
+    }
+
+    &:hover:not([data-current='true']) {
+      background-color: var(--blue-200);
+    }
   }
 }

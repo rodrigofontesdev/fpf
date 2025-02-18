@@ -80,4 +80,5 @@ textarea,
 select {
   font-family: var(--font-primary);
   font-weight: var(--font-regular);
+  outline-color: var(--blue-500);
 }

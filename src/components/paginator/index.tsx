@@ -16,6 +16,7 @@ export function Paginator() {
           <a
             href="#"
             key={page}
+            data-current={page === 1}
           >
             {page}
           </a>
