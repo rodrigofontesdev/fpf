@@ -2,11 +2,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: var(--font-md);
   padding: var(--space-4) var(--space-8);
-  background-color: var(--black);
-  color: var(--white);
+  border-radius: var(--rounded-sm);
+  transition: background-color 400ms ease-in;
 
   &:disabled {
     cursor: not-allowed;
+  }
+}
+
+.primaryButton {
+  background-color: var(--blue-500);
+  color: var(--blue-50);
+
+  &:hover {
+    background-color: var(--blue-600);
+  }
+}
+
+.secondaryButton {
+  background-color: var(--blue-100);
+  color: var(--blue-800);
+
+  &:hover {
+    background-color: var(--blue-200);
   }
 }
