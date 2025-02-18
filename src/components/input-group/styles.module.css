@@ -9,27 +9,24 @@
   line-height: 1;
 }
 
-.inputControl {
+.inputControl,
+.selectControl {
+  height: 43px;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--blue-800);
   font-size: var(--font-sm);
+  font-weight: var(--font-bold);
   padding: var(--space-3) var(--space-6);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: outline-color 300ms ease-in;
+  border: 1px solid var(--blue-200);
+  border-radius: var(--rounded-sm);
+  transition: outline-color 400ms ease-in;
 
   &[type='file'] {
+    height: auto;
     padding: 0;
     border: none;
+    border-radius: 0;
   }
-}
-
-.selectControl {
-  background-color: var(--white);
-  color: var(--black);
-  font-size: var(--font-sm);
-  padding: var(--space-3) var(--space-6);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: outline-color 300ms ease-in;
 }
 
 .inputError {
