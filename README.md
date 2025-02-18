@@ -52,7 +52,7 @@ npm run dev
 
 ## Considerações finais
 
-Para fins de demonstração, os dados dos usuários são armazenados em um mock em memória. Em um cenário real, esses dados seriam obtidos de um backend através de um cliente HTTP como **Axios**.
+Para fins de demonstração, os dados dos usuários são armazenados em um mock em memória. Em um cenário real, esses dados seriam obtidos de um backend, consumindo uma API através de um cliente HTTP como **Axios**.
 
 O gerenciamento do formulário de cadastro, poderia ser implementado com **React Hook Form** e a validação dos dados com **Zod**.
 
