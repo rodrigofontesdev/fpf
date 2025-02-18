@@ -56,7 +56,12 @@ export function App() {
                 </Button>
               </div>
 
-              <Button onClick={handleOpenModal}>Criar usuário</Button>
+              <Button
+                type="button"
+                onClick={handleOpenModal}
+              >
+                Criar usuário
+              </Button>
             </div>
 
             <div className={styles.filter}>
