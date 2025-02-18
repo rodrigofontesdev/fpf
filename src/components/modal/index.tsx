@@ -14,7 +14,14 @@ export function Modal({ children, onClose }: ModalProps) {
 
   useEffect(() => {
     containerRef.current?.focus()
+    document.body.style.overflow = 'hidden'
 
+    return () => {
+      document.body.style.overflow = 'auto'
+    }
+  }, [])
+
+  useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === 'Escape') {
         onClose()

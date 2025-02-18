@@ -56,4 +56,6 @@
   --rounded-lg: 16px;
   --rounded-xl: 20px;
   --rounded-full: 9999px;
+
+  --sidebar-width: 20rem;
 }

@@ -1,5 +1,5 @@
 .sidebar {
-  width: 20rem;
+  width: var(--sidebar-width);
   position: fixed;
   top: 81px;
   bottom: 0;
@@ -14,7 +14,7 @@
 }
 
 .isHidden {
-  left: -20rem;
+  left: calc(-1 * var(--sidebar-width));
 }
 
 .mainMenu {

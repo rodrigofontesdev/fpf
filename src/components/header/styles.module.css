@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: var(--space-10);
+  gap: var(--space-5);
   background-color: var(--white);
   padding-right: var(--space-5);
   padding-left: var(--space-5);
@@ -15,10 +15,10 @@
 }
 
 .headerLeft {
-  width: calc(20rem - var(--space-5));
+  width: calc(var(--sidebar-width) - var(--space-5));
   display: flex;
   align-items: center;
-  gap: var(--space-10);
+  gap: var(--space-5);
   padding-top: var(--space-5);
   padding-bottom: var(--space-5);
   border-right: 1px solid var(--gray-100);
@@ -51,5 +51,15 @@
 
   img {
     border-radius: inherit;
+  }
+}
+
+@media (min-width: 48rem) {
+  .header {
+    gap: var(--space-10);
+  }
+
+  .headerLeft {
+    gap: var(--space-10);
   }
 }

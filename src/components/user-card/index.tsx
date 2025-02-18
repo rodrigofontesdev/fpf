@@ -40,33 +40,33 @@ export function UserCard({ user }: UserCardProps) {
           alt={`Foto de perfil de ${name}`}
         />
         <p>
-          <b>Status: </b> <span>{format.status(status)}</span>
+          <b>Status</b> <span>{format.status(status)}</span>
         </p>
         <p>
-          <b>Nascimento: </b> <span>{birth}</span>
+          <b>E-mail</b>
+          <span className={styles.cardMetadata__email}>{email}</span>
         </p>
       </div>
 
       <div className={styles.cardInfo}>
         <h3>{name}</h3>
         <p>
-          <b>CPF: </b>
+          <b>CPF</b>
           <span>{cpf}</span>
         </p>
         <p>
-          <b>Idade: </b>
+          <b>Idade</b>
           <span>{age} anos</span>
         </p>
         <p>
-          <b>E-mail: </b>
-          <span>{email}</span>
+          <b>Nascimento</b> <span>{birth}</span>
         </p>
         <p>
-          <b>Telefone: </b>
+          <b>Telefone</b>
           <span>{phone}</span>
         </p>
         <p>
-          <b>Endereço: </b>
+          <b>Endereço</b>
           <span>
             {address.street}, {address.streetNumber} <br />
             {address.neighborhood}, {address.city} - {address.state} <br />

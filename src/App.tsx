@@ -14,7 +14,9 @@ import Search from '@static/images/search.svg'
 
 export function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(() => {
+    return window.matchMedia(`(min-width: 48rem)`).matches
+  })
 
   function handleOpenModal() {
     setIsModalOpen(true)

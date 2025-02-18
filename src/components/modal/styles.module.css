@@ -33,9 +33,10 @@
 
 .header {
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: center;
-  gap: var(--space-10);
+  gap: var(--space-3);
   padding-bottom: var(--space-4);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -50,5 +51,11 @@
     &:hover {
       color: var(--blue-500);
     }
+  }
+}
+
+@media (min-width: 40rem) {
+  .header {
+    gap: var(--space-10);
   }
 }
