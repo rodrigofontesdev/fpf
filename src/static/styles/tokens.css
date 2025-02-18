@@ -1,6 +1,12 @@
 :root {
   --black: #000000;
   --white: #ffffff;
+  --gray-100: #e4e7ec;
+  --blue-800: #344054;
+  --blue-500: #465fff;
+  --blue-200: #ecf3ff;
+  --blue-100: #f2f4f7;
+  --blue-50: #f9fafb;
   --red-500: #ff4444;
 
   --font-primary: 'Lato', 'Lato Fallback';

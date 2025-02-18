@@ -1,8 +1,12 @@
 import styles from './styles.module.css'
 
-export function Sidebar() {
+type SidebarProps = {
+  open: boolean
+}
+
+export function Sidebar({ open }: SidebarProps) {
   return (
-    <aside className={styles.sidebar}>
+    <aside className={`${styles.sidebar} ${open ? '' : styles.isHidden}`}>
       <nav className={styles.mainMenu}>
         <ul>
           <li className={styles.navItem}>
@@ -20,7 +24,16 @@ export function Sidebar() {
               href="#"
               className={styles.navLink}
             >
-              Posts
+              Campeonatos
+            </a>
+          </li>
+
+          <li className={styles.navItem}>
+            <a
+              href="#"
+              className={styles.navLink}
+            >
+              Estatísticas
             </a>
             <ul>
               <li className={styles.navItem}>
@@ -28,7 +41,7 @@ export function Sidebar() {
                   href="#"
                   className={styles.navLink}
                 >
-                  Novo post
+                  Jogadores
                 </a>
               </li>
 
@@ -37,7 +50,7 @@ export function Sidebar() {
                   href="#"
                   className={styles.navLink}
                 >
-                  Categorias
+                  Campeonatos
                 </a>
               </li>
 
@@ -46,7 +59,7 @@ export function Sidebar() {
                   href="#"
                   className={styles.navLink}
                 >
-                  Tags
+                  Times
                 </a>
               </li>
             </ul>

@@ -6,56 +6,17 @@ import { Paginator } from '@components/paginator'
 import { Sidebar } from '@components/sidebar'
 import { UserCard } from '@components/user-card'
 import { useState } from 'react'
+import { USERS } from './utils/data'
 
 import styles from './styles.module.css'
 
 import Search from '@static/images/search.svg'
 
-const users = [
-  {
-    id: 1,
-    avatar: 'https://placehold.co/600x800',
-    name: 'Milena Silvana Moura',
-    cpf: 17706229009,
-    age: 29,
-    birth: '1995-12-10',
-    status: 'pending',
-    email: 'milena@example.com',
-    phone: 42998199945,
-    address: {
-      street: 'Rua Dario Borges de Lis',
-      streetNumber: 995,
-      neighborhood: 'São Cristóvão',
-      city: 'Guarapuava',
-      state: 'PR',
-      zipcode: 85063480,
-    },
-  },
-  {
-    id: 2,
-    avatar: 'https://placehold.co/600x800',
-    name: 'Vinicius Cláudio Mendes',
-    cpf: 36128447929,
-    age: 25,
-    birth: '2000-01-17',
-    status: 'approved',
-    email: 'vinicius@example.com',
-    phone: 83983005611,
-    address: {
-      street: 'Rua Salvino Figueiredo Neto',
-      streetNumber: 456,
-      neighborhood: 'Jardim Paulistano',
-      city: 'Campina Grande',
-      state: 'PB',
-      zipcode: 58415002,
-    },
-  },
-]
-
 export function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
 
-  const handleOpenModal = () => {
+  function handleOpenModal() {
     setIsModalOpen(true)
   }
 
@@ -63,10 +24,14 @@ export function App() {
     setIsModalOpen(false)
   }
 
+  function handleToggleSidebar() {
+    setIsSidebarOpen((prevState) => !prevState)
+  }
+
   return (
     <>
-      <Header />
-      <Sidebar />
+      <Header onToggleSidebar={handleToggleSidebar} />
+      <Sidebar open={isSidebarOpen} />
       <main className={styles.main}>
         <section className={styles.app}>
           <form className={styles.filterOptions}>
@@ -118,7 +83,7 @@ export function App() {
           </form>
 
           <div className={styles.userCards}>
-            {users.map((user) => (
+            {USERS.map((user) => (
               <UserCard
                 key={user.id}
                 user={user}
