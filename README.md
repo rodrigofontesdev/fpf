@@ -2,6 +2,20 @@
 
 # SportCenter
 
+Uma interface totalmente responsiva, simulando o painel de uma plataforma. O objetivo da aplicação é que o usuário possa acessar o sistema, visualizar as pessoas cadastradas e gerenciar o cadastro.
+
+É possível visualizar o projeto através do link: [https://fpf-rodrigofontes.vercel.app/](https://fpf-rodrigofontes.vercel.app/)
+
+A estrutura do projeto está organizada da seguinte forma:
+
+- :open_file_folder: **/src:**
+  
+  - :open_file_folder: **/components:** Componentes de UI que podem ser reaproveitados.
+    
+  - :open_file_folder: **/static:** Arquivos de assets, como fontes, imagens e CSS.
+    
+  - :open_file_folder: **/utils:** Mocks e funções auxiliares.
+
 ## Pré-requisitos
 
 - Git
@@ -38,7 +52,11 @@ npm run dev
 
 ## Considerações finais
 
+Para fins de demonstração, os dados dos usuários são armazenados em um mock em memória. Em um cenário real, esses dados seriam obtidos de um backend através de um cliente HTTP como **Axios**.
 
+O gerenciamento do formulário de cadastro, poderia ser implementado com **React Hook Form** e a validação dos dados com **Zod**.
+
+A navegação entre as páginas pode ser alcançada com **React Router**, que também permitiria destacar o link ativo na barra lateral de acordo com a rota atual.
 
 ## Construído com
 
