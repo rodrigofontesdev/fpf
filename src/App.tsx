@@ -32,7 +32,7 @@ export function App() {
     <>
       <Header onToggleSidebar={handleToggleSidebar} />
       <Sidebar open={isSidebarOpen} />
-      <main className={styles.main}>
+      <main className={`${styles.main} ${isSidebarOpen ? '' : styles.stretchMain}`}>
         <section className={styles.app}>
           <form className={styles.filterOptions}>
             <div className={styles.search}>

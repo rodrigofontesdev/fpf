@@ -2,6 +2,11 @@
   margin-top: 81px;
   margin-left: 20rem;
   padding: var(--space-10) var(--space-5);
+  transition: margin 400ms ease-in;
+}
+
+.stretchMain {
+  margin-left: 0;
 }
 
 .app {
