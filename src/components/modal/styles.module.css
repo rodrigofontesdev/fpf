@@ -46,5 +46,9 @@
   button {
     background-color: transparent;
     padding: var(--space-1);
+
+    &:hover {
+      color: var(--blue-500);
+    }
   }
 }

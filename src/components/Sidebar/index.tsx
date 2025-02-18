@@ -50,7 +50,7 @@ export function Sidebar({ open }: SidebarProps) {
                   href="#"
                   className={styles.navLink}
                 >
-                  Campeonatos
+                  Temporadas
                 </a>
               </li>
 

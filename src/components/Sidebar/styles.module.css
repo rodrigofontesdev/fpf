@@ -1,7 +1,7 @@
 .sidebar {
   width: 20rem;
   position: fixed;
-  top: 75px;
+  top: 81px;
   bottom: 0;
   left: 0;
   z-index: 1;
@@ -43,7 +43,9 @@
   font-size: var(--font-sm);
   font-weight: bold;
   padding: var(--space-4) var(--space-6);
-  transition: all 400ms ease-in;
+  transition:
+    background-color,
+    color 400ms ease-in;
   border-radius: var(--rounded-sm);
 
   &[data-active='true'] {

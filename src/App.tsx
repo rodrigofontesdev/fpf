@@ -36,49 +36,40 @@ export function App() {
         <section className={styles.app}>
           <form className={styles.filterOptions}>
             <div className={styles.search}>
-              <div className={styles.inputGroup}>
-                <label htmlFor="search">Buscar</label>
+              <div className={styles.searchInput}>
+                <label htmlFor="s">Buscar</label>
                 <input
                   type="search"
                   name="s"
-                  id="search"
+                  id="s"
                   placeholder="Buscar usuário"
                 />
-                <button
+                <Button
                   type="submit"
                   aria-label="Buscar"
                 >
                   <img
                     src={Search}
                     alt=""
+                    aria-hidden={true}
                   />
-                </button>
+                </Button>
               </div>
 
-              <Button
-                className={styles.newEntry}
-                onClick={handleOpenModal}
-              >
-                Criar usuário
-              </Button>
+              <Button onClick={handleOpenModal}>Criar usuário</Button>
             </div>
 
             <div className={styles.filter}>
-              <select
-                name=""
-                id=""
-              >
-                <option
-                  value=""
-                  selected
-                  disabled
-                >
-                  Status
-                </option>
-                <option value="approved">Aprovado</option>
-                <option value="pending">Análise pendente</option>
-                <option value="inactive">Inativo</option>
-              </select>
+              <span>Filtrar: </span>
+
+              <InputGroup.Root>
+                <InputGroup.Select inputId="status">
+                  <option selected>Selecionar status</option>
+                  <option value="approved">Aprovado</option>
+                  <option value="pending">Análise pendente</option>
+                  <option value="inactive">Inativo</option>
+                </InputGroup.Select>
+              </InputGroup.Root>
             </div>
           </form>
 
@@ -269,7 +260,12 @@ export function App() {
           </div>
 
           <div className={styles.modalCreateUser__Footer}>
-            <Button onClick={handleCloseModal}>Cancelar</Button>
+            <Button
+              appearance="secondary"
+              onClick={handleCloseModal}
+            >
+              Cancelar
+            </Button>
             <Button type="submit">Salvar</Button>
           </div>
         </Modal>
