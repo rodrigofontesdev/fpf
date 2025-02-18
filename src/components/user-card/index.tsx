@@ -1,22 +1,25 @@
+import { Button } from '@components/button'
+import { format } from '@utils/formatter'
+
 import styles from './styles.module.css'
 
 type User = {
   id: number
   avatar: string
   name: string
-  cpf: number
+  cpf: string
   age: number
   birth: string
   status: string
   email: string
-  phone: number
+  phone: string
   address: {
     street: string
     streetNumber: number
     neighborhood: string
     city: string
     state: string
-    zipcode: number
+    zipcode: string
   }
 }
 
@@ -36,8 +39,12 @@ export function UserCard({ user }: UserCardProps) {
           height={800}
           alt={`Foto de perfil de ${name}`}
         />
-        <p>Nascimento: {birth}</p>
-        <p>Status: {status}</p>
+        <p>
+          <b>Status: </b> <span>{format.status(status)}</span>
+        </p>
+        <p>
+          <b>Nascimento: </b> <span>{birth}</span>
+        </p>
       </div>
 
       <div className={styles.cardInfo}>
@@ -69,7 +76,7 @@ export function UserCard({ user }: UserCardProps) {
       </div>
 
       <div className={styles.cardFooter}>
-        <a href="#">Ver perfil</a>
+        <Button>Ver perfil</Button>
       </div>
     </article>
   )
